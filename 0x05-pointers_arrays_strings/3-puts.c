@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- * _puts - return the length of a string
- * @str : Parameter accept  string
- * Return: nothng
- *
+ * _puts - print a string to stdout
+ * @str: char array string type
+ * Description: Can only use _putchar
  */
 
 void _puts(char *str)
 {
-int c;
-for (c = 0; str[c] != '\0'; c++)
-{
-_putchar(str[c]);
+	int i;
 
-}
-_putchar('\n');
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
